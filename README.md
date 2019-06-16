@@ -1,0 +1,2 @@
+# CSTool
+Coinsquare trader script
