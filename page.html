@@ -1,0 +1,162 @@
+<div id="claude_tool" class="container rounded">
+	<div class="row">
+	
+		<div class="col-4">
+		
+		</div>
+		<div class="col-4 text-center">
+			<h4 class="text-center strokeme"> Claude's Tool</h4>
+		</div>
+		<div class="col-4 text-right strokeme">
+		</div>
+	</div>
+	<div class="row">
+<!--	/*Ratio*/ -->
+		<div class="col-4" >
+		   	<div class="row height_ajust">
+			   	<div class="col-6 row height_ajust">
+			    	<p class="strokeme text-right">Ratio</p>
+			    </div>
+			    <div class="col-6 row height_ajust">
+			    	<p class="strokeme" id="claude_tool_ratio">Ratio</p>
+				</div>
+			</div>
+			<div class="row height_ajust">
+			    <div class="col-6 row height_ajust">
+			    	<p class="strokeme">Revenue</p>
+			    </div>
+			    <div class="col-6 row height_ajust">
+			    	<p class="strokeme" id="claude_tool_revenue">Revenue</p>
+				</div>
+			</div>
+			<div class="row height_ajust">
+			    <div class="col-6 row height_ajust">
+			    	<p class="strokeme">Last Bid</p>
+			    </div>
+			    <div class="col-6 row height_ajust">
+			    	<p class="strokeme" id="claude_tool_last_bid">bid</p>
+				</div>
+			</div>
+			<div class="row height_ajust">
+			    <div class="col-6 row height_ajust">
+			    	<p class="strokeme">Last Ask</p>
+			    </div>
+			    <div class="col-6 row height_ajust">
+			    	<p class="strokeme" id="claude_tool_last_ask">ask</p>
+				</div>
+			</div>
+			<div class="row height_ajust">
+			    <div class="col-6 row height_ajust">
+			    	<p class="strokeme">BTC ask value</p>
+			    </div>
+			    <div class="col-6 row height_ajust">
+			    	<p class="strokeme" id="claude_tool_btc_value">ask</p>
+				</div>
+			</div>
+			<div class="row height_ajust">
+			    <label class="col-sm-6 col-form-label strokeme" style="padding: 0px;">Max</label>
+			    <div class="col-sm-6">
+			    	<input class="form-control claude_tool_input inputText" id="claude_tool_ask_max" placeholder="CAD">
+			    </div>
+			</div>
+			<div class="row height_ajust">
+			    <label class="col-sm-6 col-form-label strokeme" style="padding: 0px;">Withdraw</label>
+			    <div class="col-sm-6">
+			    	<input class="form-control claude_tool_input inputText" id="claude_tool_ask_withdraw" placeholder="CAD">
+			    </div>
+			</div>
+		</div>
+		
+		<div class="col-4" >
+			<div class="row height_ajust">
+			    <div class="col-6 row height_ajust">
+			    	<p class="strokeme">Ask Ratio</p>
+			    </div>
+			    <div class="col-6 row height_ajust">
+			    	<p class="strokeme" id="claude_tool_ask_ratio">Ask</p>
+				</div>
+			</div>
+
+			<!-- Bid -->
+			<div class="row height_ajust">
+			    <div class="col-6 row height_ajust">
+			    	<p class="strokeme">Bid Ratio</p>
+			    </div>
+			    <div class="col-6 row height_ajust">
+			    	<p class="strokeme" id="claude_tool_bid_ratio">Bid</p>
+				</div>
+			</div>
+			<div class="row height_ajust">
+			    <div class="col-6 row height_ajust">
+			    	<p class="strokeme">CAD</p>
+			    </div>
+			    <div class="col-6 row height_ajust">
+			    	<p class="strokeme" id="claude_tool_bid_CAD">CAD</p>
+				</div>
+			</div>
+
+			
+			<div  class="row height_ajust">
+				<button class="btn btn-info claudes_tool_button1 claudes_tool_get">Get</button>	
+				<button class="btn btn-success claudes_tool_button1 claude_tool_push bid" >Buy</button>
+				<button class="btn btn-danger claudes_tool_button1 claude_tool_push  ask" >Sell</button>
+			</div>
+			<div  class="row height_ajust">
+				<button  class="btn btn-info claude_tool_plus claudes_tool_button2" value="-10">-10</button>
+        		<button  class="btn btn-info claude_tool_plus claudes_tool_button2" value="-5">-5</button>
+        		<button  class="btn btn-info claude_tool_plus claudes_tool_button2" value="-1">-1</button>
+        		
+        		<button  class="btn btn-info claude_tool_plus claudes_tool_button2" value="1">+1</button>
+        		<button class="btn btn-info claude_tool_plus claudes_tool_button2" value="5">+5</button>
+        		<button class="btn btn-info claude_tool_plus claudes_tool_button2" value="10">+10</button>
+			</div>
+			<!--			/*Ask*/ -->
+		
+		
+		<!--		/*Monitoring*/ -->
+		</div>
+
+		<div class="col-4">
+			<div class="row height_ajust">
+			    <label class="col-6 col-form-label strokeme">Gap</label>
+			    <div class="col-sm-6">
+			    	<input class="form-control claude_tool_input inputText" id="claude_tool_monitor_gap_input" placeholder="CAD">
+			    </div>
+			</div>
+			<div class="row height_ajust">
+			    <label class="col-6 col-form-label strokeme">Alert</label>
+			    <div class="col-sm-6">
+			    	<select id="alert_box">
+						<option value="no">No</option>
+						<option value="alert">Alert</option>
+						<option value="notification">Notification</option>
+
+					</select>
+			    </div>
+			</div>
+			
+			<div class="row height_ajust">
+			    <label class="col-4 col-form-label strokeme">Integer</label>
+			    <div class="col-sm-8">
+			    	<input type="checkbox" class="form-control claude_tool_input big-checkbox" id="claude_tool_integer">
+			    </div>
+			</div>
+			<div class="row height_ajust">
+			    <label class="col-4 col-form-label strokeme">Mute</label>
+			    <div class="col-sm-8">
+			    	<input type="checkbox" class="form-control claude_tool_input big-checkbox" id="sound_alert">
+			    </div>
+			</div>		
+			
+			<div class="row height_ajust">
+			    <label class="col-4 col-form-label strokeme">Bot</label>
+			    <div class="col-sm-8">
+			    	<input type="checkbox" class="form-control claude_tool_input big-checkbox" id="automatic_mode">
+			    </div>
+			</div>
+			
+		</div>
+	</div>
+	<audio id="orders" src="https://www.soundjay.com/misc/sounds/bell-ringing-04.mp3" preload="auto"></audio>
+	<audio id="gap" src="https://www.soundjay.com/misc/sounds/small-bell-ring-01a.mp3" preload="auto"></audio>
+</div>
